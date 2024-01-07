@@ -1,0 +1,33 @@
+---
+layout: base
+---
+
+{{ content }}
+
+<div class="gallery">
+	{% assign categories = site.data.links | map: 'category' | uniq %}
+	
+	{% for category in categories %}
+	  <div class="category-container">
+		<h1>{{ category }}</h1>
+		<div class="category-gallery">
+		  {% for link in site.data.links %}
+			{% if link.category == category %}
+			  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+				<div class="gallery-item">
+				  <img src="{{ link.icon }}" alt="{{ link.title }}" class="gallery-icon">
+				  <div class="gallery-content">
+					<h2>{{ link.title }}</h2>
+					<p>{{ link.excerpt }}</p>
+				  </div>
+				</div>
+			  </a>
+			{% endif %}
+		  {% endfor %}
+		</div>
+	  </div>
+	  <br> <!-- Add a new line for separation between categories -->
+	{% endfor %}
+  </div>
+  
+  
