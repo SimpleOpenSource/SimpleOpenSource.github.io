@@ -1,0 +1,10 @@
+- title: "Appsheet"
+  icon: "/assets/icons/appsheet.svg"
+  excerpt: "Online platform to develop multi-platform applications based on spreadsheets such as Excel or Google Sheets"
+  url: "https://www.appsheet.com/"
+  category: development
+- title: "Markdown Guide"
+  icon: "/assets/icons/markdown.svg"
+  excerpt: "A guide on how to use the Markdown syntax used in ReadMe files and jekyll websites"
+  url: "https://www.markdownguide.org/cheat-sheet/"
+  category: syntax
