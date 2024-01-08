@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll Set Up & Hosting"
-categories: jekyll
+categories: Jekyll
 ---
 # Install Requirements
 Follow Jekyll's [documentation](https://jekyllrb.com/docs/){:target="_blank"}.

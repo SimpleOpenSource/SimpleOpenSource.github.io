@@ -1,0 +1,6 @@
+- name: General
+  url: /category/general
+- name: Jekyll
+  url: /category/jekyll
+- name: Appsheet
+  url: /category/appsheet

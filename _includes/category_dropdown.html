@@ -1,0 +1,8 @@
+
+<select id="category-dropdown" class="custom-dropdown" onchange="location = this.value;">
+  <option value="" class="default-option">Select Category</option>
+  {% for category in site.data.categories %}
+    {% assign category_slug = category.name | slugify %}
+    <option value="/category/{{ category_slug }}" class="category-option">{{ category.name }}</option>
+  {% endfor %}
+</select>

@@ -9,6 +9,7 @@ layout: base
 
   {{ content }}
 
+  {%- include category_dropdown.html -%}
 
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
@@ -24,6 +25,8 @@ layout: base
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
+      {%- assign post_categories = post.categories | default: '' -%}
+        {%- if post_categories contains page.category -%}
       <li>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
@@ -35,6 +38,7 @@ layout: base
           {{ post.excerpt }}
         {%- endif -%}
       </li>
+      {%- endif -%}
       {%- endfor -%}
     </ul>
 
