@@ -2,6 +2,8 @@
 layout: post
 title: "Jekyll Set Up & Hosting"
 categories: Jekyll
+date: 2024-01-10 22:25:00
+hidden: true
 ---
 # Install Requirements
 Follow Jekyll's [documentation](https://jekyllrb.com/docs/){:target="_blank"}.

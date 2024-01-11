@@ -25,6 +25,7 @@ layout: base
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
+      {%- unless post.hidden -%}
       {%- assign post_categories = post.categories | default: '' -%}
         {%- if post_categories contains page.category -%}
       <li>
@@ -39,6 +40,7 @@ layout: base
         {%- endif -%}
       </li>
       {%- endif -%}
+      {%- endunless -%}
       {%- endfor -%}
     </ul>
 

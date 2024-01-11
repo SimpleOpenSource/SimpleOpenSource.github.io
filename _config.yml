@@ -34,7 +34,7 @@ plugins:
 # in order as they should show up.
 header_pages:
   - _pages/about.md
-  - _pages/checklist.md
+  # - _pages/checklist.md
   - _pages/links.md
   - _pages/contact.md
   
